@@ -13,3 +13,13 @@ before_install:
 # Run Unit Test and Integration Tests
 script:
   - mvn verify
+
+# Cache the .m2 folder to prevent redownloading dependencies on each build
+cache:
+  directories:
+  - "$HOME/.m2/repository"
+
+#Token:f8144bea99687c31a2324a9c827ed2aa4dd6dae6
+
+secure: "Fy4vHj5qDhSB741NiMEtU/NvCWJetvBZJTdntqT5hnekUiJzSeotVpbnlUnTk3yvAMmUi8mjPftakNWRpjUNGdPazCOVLkUA3UeMDfo0y+wGC+bEydJB2xH2FtVVr+Bs5dmatuRTsiVCXf0Psp6bqLgk/Iqn4+5AjnpwK8/qn9ha9F4yerAPIoUAsy3raDqjvGEYd6jU7PaATbL8d3QgAHKfK8NzJud7aqlAnOBomEPPjYyjxV9ED/CKDmFDuvaxWAoUKnSqgwp4W3sjwJhZO+8CANzMPVecuDFv4IGLUmohVGXTNJ+ojqwr+KYPRfrnaIou8rI3uTGRs6ZN1IZzRSalCpUgQEVXJKllR7hNG9D90mwqCX73qT950CqYT6tiiD+TmCDuy8T5NAEOHjKKAX+NHq5U736k4CeZFNY7ThI7eIAxcQmA1r1Mq/ohGxhDy3mxXliBzqCrb6FgEWNclqnarv2pGZMF13Dy6K2x7GGwlk1RppL5C99JBj4m+zFrZPoYUmdBMLCmSyA8Ft50pZ1SQLvbY1BcImmRRE+XDLahdoYKy0Fe/gXFUInpKUnpPSmVjnXgxlkXDx7mCEM3wt7s5L0zII20ydR59VJhD+1fBQRdXgoNrOyUKLg/bjjYLTweKbrmXuULD72ZE6czAPwbMgqN9jdigHAgjlU6yvA="
+
